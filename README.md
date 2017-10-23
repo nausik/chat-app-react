@@ -20,6 +20,12 @@ Now install dependencies:
 yarn
 ```
 
+Run tests to ensure everything is OK:
+
+```
+yarn test
+```
+
 If you want to build project:
 
 ```
