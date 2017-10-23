@@ -8,7 +8,7 @@ module.exports = {
     vendor: ['react']
   },
   output: {
-    path: Path.resolve('public/dist'),
+    path: Path.resolve('./public'),
     filename: '[name].bundle.js'
   },
   plugins: [

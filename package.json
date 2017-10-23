@@ -5,7 +5,7 @@
   "main": "src/index.jsx",
   "scripts": {
     "test": "mocha --require babel-register --recursive",
-    "dev": "yarn webpack-dev-server -- --content-base=public --inline --port 9995 --host 0.0.0.0 --watch --hot --inline",
+    "dev": "yarn webpack-dev-server --content-base=public --inline --port 9995 --host 0.0.0.0 --watch --hot --inline",
     "build": "yarn webpack"
   },
   "author": "Artem Barbinyahra",
