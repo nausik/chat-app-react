@@ -11,16 +11,38 @@ const footerStyle = {
 
 export default class AppFooter extends React.Component {
   render() {
+    let input;
+
     return (
       <div style={footerStyle}>
-        <input type="date" style={{
-          paddingLeft: '10px',
-          paddingRight: '10px',
-          WebkitAppearance: 'textfield',
-          height: '20px',
-          width: '100%',
-          padding: '0'
-        }}/>
+
+        <form onSubmit={e => {
+          e.preventDefault();
+          if (!input.value.trim()) {
+            return
+          }
+
+          this.props.actions.addMessage(input.value, 'me', 'text');
+
+          input.value = '';
+        }}>
+
+          <input
+
+            ref={node => {
+              input = node
+            }}
+
+            type="text" style={{
+            paddingLeft: '10px',
+            paddingRight: '10px',
+            WebkitAppearance: 'textfield',
+            height: '20px',
+            width: '100%',
+            padding: '0'
+          }}/>
+
+        </form>
       </div>
     )
   }
