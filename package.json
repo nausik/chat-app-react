@@ -1,33 +1,35 @@
 {
-  "name": "test",
+  "name": "chat-app-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require babel-register --recursive",
     "dev": "yarn webpack-dev-server -- --content-base=public --inline --port 9995 --host 0.0.0.0 --watch --hot --inline",
     "build": "yarn webpack"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Artem Barbinyahra",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
     "css-loader": "^0.28.7",
+    "expect": "^21.2.1",
     "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^1.1.5",
-    "karma": "^1.7.1",
-    "style-loader": "^0.19.0",
-    "url-loader": "^0.6.2",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.3"
+    "mocha": "~3",
     "react": "^16.0.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.0.0",
     "react-google-maps": "^9.0.1",
     "react-redux": "^5.0.6",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
   }
 }
