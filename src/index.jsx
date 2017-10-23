@@ -7,9 +7,9 @@ import faker from './faker/message_faker';
 
 store.subscribe(() => {
   const state = store.getState();
-  const lastMessage = state.messages.slice(-1)[0];
+  const last_message = state.messages.slice(-1)[0];
 
-  if (lastMessage && lastMessage.message_sender === 'target') {
+  if (last_message && last_message.message_sender === 'target') {
     return;
   }
 
