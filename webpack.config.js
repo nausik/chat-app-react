@@ -4,11 +4,11 @@ const Path = require('path'),
 
 module.exports = {
   entry: {
-    app: './public/src/js/index.jsx',
+    app: './src/index.jsx',
     vendor: ['react']
   },
   output: {
-    path: Path.resolve(__dirname, './public/dist/'),
+    path: Path.resolve('public/dist'),
     filename: '[name].bundle.js'
   },
   plugins: [
@@ -22,14 +22,6 @@ module.exports = {
     }),
     new Webpack.NamedModulesPlugin(),
   ],
-  resolve: {
-    alias: {
-      styles: Path.resolve(__dirname, './public/src/css/'),
-      components: Path.resolve(__dirname, './public/src/components/'),
-      js: Path.resolve(__dirname, './public/src/js/'),
-      img: Path.resolve(__dirname, './public/img/')
-    }
-  },
   module: {
     loaders: [
       {

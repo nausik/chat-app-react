@@ -1,0 +1,38 @@
+.expand-height {
+    height: 100%;
+}
+
+.expand-width {
+    width: 100%;
+}
+
+.pull-right {
+    margin-right: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.message {
+    max-width: 70%;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.own_message {
+    background-color: #f1c40f;
+    opacity: 0.5;
+    position: relative;
+    margin-left: auto;
+}
+
+.target_message {
+    background-color: #1abc9c;
+    opacity: 0.5;
+}
