@@ -23,9 +23,6 @@ ul {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    display: inline-block;
-
-    white-space: nowrap;
 }
 
 .own_message {
