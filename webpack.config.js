@@ -5,7 +5,7 @@ const Path = require('path'),
 module.exports = {
   entry: {
     app: './src/index.jsx',
-    vendor: ['react']
+    vendor: ['react', 'react-dom', 'redux', 'react-redux', 'react-addons-css-transition-group']
   },
   output: {
     path: Path.resolve('./public'),
