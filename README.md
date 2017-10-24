@@ -1,4 +1,4 @@
-Chat App React
+Chat App React [![Build Status](https://travis-ci.org/nausik/chat-app-react.svg?branch=master)](https://travis-ci.org/nausik/chat-app-react)
 ==============
 
 Clone repo:
